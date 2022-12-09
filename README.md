@@ -1,2 +1,22 @@
-# sol-grant
-Pitch your projects and get micro-grants from the audience to support your work
+# SOL GRANT
+SOL Grant provides a platform to receive small donations from the audience for your projects on Solana. List your projects with a pitch and get your micro-grants right into your wallet.
+
+
+### Try in local environment following below commands
+
+Clone the repo and install required packages
+```sh
+git clone https://github.com/neel-ds/sol-grant
+cd sol-grant
+npm i
+```
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
