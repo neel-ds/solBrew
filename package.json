@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@solana/pay": "^0.2.4",
+    "@solana/wallet-adapter-base": "^0.9.19",
+    "@solana/wallet-adapter-react": "^0.15.25",
+    "@solana/wallet-adapter-react-ui": "^0.9.23",
+    "@solana/wallet-adapter-wallets": "^0.19.8",
+    "@solana/web3.js": "^1.70.1",
+    "bignumber.js": "^9.1.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.3.4"
   }
 }
