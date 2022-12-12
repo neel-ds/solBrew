@@ -9,12 +9,12 @@
   padding: 20px;
   border-radius: 1.5rem;
   border: 4px solid rgb(255, 255, 255);
-  background: rgb(101, 116, 191);
+  background: rgb(63, 92, 237);
   background: linear-gradient(
-    90deg,
-    rgba(101, 116, 191, 1) 0%,
-    rgba(171, 131, 205, 0.8730085784313726) 58%,
-    rgba(144, 255, 242, 0.8197872899159664) 100%
+    180deg,
+    rgba(63, 92, 237, 1) 0%,
+    rgba(161, 59, 247, 0.9780505952380952) 51%,
+    rgba(255, 111, 67, 1) 100%
   );
 }
 
