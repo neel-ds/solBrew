@@ -2,19 +2,24 @@ import React, { useState, useEffect } from 'react';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import Product from '../components/Product';
+import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
+import { useRouter } from 'next/router';
 
 const App = () => {
 
   // It fetches publicKey of any connected users' wallet or supported wallet.
   const { publicKey } = useWallet();
   const [products, setProducts] = useState([]);
+
+    const router = useRouter();
   
   useEffect(() => {
     if (publicKey) {
       fetch(`/api/fetchProducts`)
         .then(response => response.json())
         .then(data => {
-          setProducts(data);
+          setProducts(data);``
         });
     }
   }, [publicKey]);
@@ -39,15 +44,12 @@ const App = () => {
 
   return (
     <div className="App">
+      <NavBar/>
       <div className="container">
       <br/><br/>
         <header className="header-container">
           <div className="title-container">
-          <picture>  
-          <img className="mainlogo" src={"https://sol-minter-pi.vercel.app/_next/image?url=%2FsolanaLogoMark.png&w=64&q=75"} alt='Solana logo' /> 
-          <img className="connect" src= {"https://sol-minter-pi.vercel.app/_next/image?url=%2Fx-icon-white-20.jpg&w=32&q=75"} alt='cross' /> 
-          <img className="secondlogo" src={"https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"} alt='MLH logo' /></picture>
-            <h2 className="header">SOL Grant</h2>
+           <h2 className="header">SOL Grant</h2>
           </div>
         </header>
         <div className="sub-text detail">
@@ -56,12 +58,7 @@ const App = () => {
           {/* It will render connect waller button if there is no publicKey */}
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>
-        <div className="sub-text">
-            Deployed on Solana Devnet.
-            <br/><br/>
-            </div>
-            <div>Made with ❤️ for</div>
-            <picture><img className="footerlogo" src={"https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png"} alt='MLH Logo' /></picture><br/>
+        <Footer/>
       </div>
     </div>
   );

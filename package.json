@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@solana/pay": "^0.2.4",
     "@solana/wallet-adapter-base": "^0.9.19",
     "@solana/wallet-adapter-react": "^0.15.25",
@@ -18,9 +21,12 @@
     "bignumber.js": "^9.1.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "firebase": "^9.15.0",
+    "framer-motion": "^7.6.19",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4"
   }
 }

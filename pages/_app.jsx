@@ -10,6 +10,7 @@ import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import "../styles/globals.css";
 import "../styles/App.css";
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 const App = ({ Component, pageProps }) => {
@@ -29,6 +30,7 @@ const App = ({ Component, pageProps }) => {
   );
 
   return (
+    <ChakraProvider>
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
@@ -36,6 +38,7 @@ const App = ({ Component, pageProps }) => {
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
+    </ChakraProvider>
   );
 };
 
