@@ -1,4 +1,4 @@
-.product_container{
+.product_container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,11 +9,16 @@
   padding: 20px;
   border-radius: 1.5rem;
   border: 4px solid rgb(255, 255, 255);
-  background: rgb(101,116,191);
-background: linear-gradient(90deg, rgba(101,116,191,1) 0%, rgba(171,131,205,0.8730085784313726) 58%, rgba(144,255,242,0.8197872899159664) 100%);
+  background: rgb(101, 116, 191);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 116, 191, 1) 0%,
+    rgba(171, 131, 205, 0.8730085784313726) 58%,
+    rgba(144, 255, 242, 0.8197872899159664) 100%
+  );
 }
 
-.product_image{
+.product_image {
   background-color: #141414;
   height: 80%;
 }
@@ -23,20 +28,20 @@ background: linear-gradient(90deg, rgba(101,116,191,1) 0%, rgba(171,131,205,0.87
   height: 30%;
 }
 
-.product_details{
+.product_details {
   display: flex;
   flex-direction: column;
 }
 
-.product_text{
+.product_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%
+  height: 100%;
 }
 
-.product_title{
+.product_title {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 15px;
@@ -44,13 +49,13 @@ background: linear-gradient(90deg, rgba(101,116,191,1) 0%, rgba(171,131,205,0.87
   height: 20%;
   color: aliceblue;
 }
-.product_description{
+.product_description {
   font-size: 1.2em;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   height: 80%;
 }
 
-.product_action{
+.product_action {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,23 +63,4 @@ background: linear-gradient(90deg, rgba(101,116,191,1) 0%, rgba(171,131,205,0.87
   width: 100%;
   gap: 10px;
   height: 30%;
-
-}
-
-.sol_button{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: aliceblue;
-  width: 100%;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 1.9em;
-}
-
-.product_price{
-  color: azure;
-  font-weight: bold;
-  font-size: 1.38em;
-  width: 100%;
-  height: 20%;
 }

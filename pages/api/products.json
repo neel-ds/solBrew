@@ -2,14 +2,12 @@
   {
     "id": 1,
     "name": "Asset Vault",
-    "price": "1.2",
     "image_url": "https://www.youtube.com/embed/BE9ItnldHcA",
     "description": "Asset Vault provides utilities to manage funds or assets in DAOs. The company needs to create a vault of investors' addresses mapped with shares (in percent %) according to their investment."
   },
   {
     "id": 2,
     "name": "DataCV",
-    "price": "1.6",
     "image_url": "https://www.youtube.com/embed/5HuChFNtT3Y",
     "description": "DataCV is a decentralised application that stores data and is based on interplanetary file system(IPFS). It is storage application which comes with top cream privileges. It supports any type of file format."
   }

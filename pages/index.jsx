@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 import {
   Box,
   Heading,
@@ -11,12 +11,12 @@ import {
   useColorModeValue,
   createIcon,
   Flex,
-  SimpleGrid
-} from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
-import { useRouter } from 'next/router';
-import { NavBar } from '../components/NavBar';
-import { Footer } from '../components/Footer';
+  SimpleGrid,
+} from "@chakra-ui/react";
+import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
+import { useRouter } from "next/router";
+import { NavBar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
 
 const Feature = ({ title, text, icon }) => {
   return (
@@ -24,22 +24,22 @@ const Feature = ({ title, text, icon }) => {
       <Flex
         w={16}
         h={16}
-        align={'center'}
-        justify={'center'}
-        color={'white'}
-        rounded={'full'}
-        bg={'gray.100'}
-        mb={1}>
+        align={"center"}
+        justify={"center"}
+        color={"white"}
+        rounded={"full"}
+        bg={"gray.200"}
+        mb={1}
+      >
         {icon}
       </Flex>
       <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.600'}>{text}</Text>
+      <Text color={"gray.800"}>{text}</Text>
     </Stack>
   );
 };
 
 export default function LandingPage() {
-
   const router = useRouter();
 
   return (
@@ -50,99 +50,110 @@ export default function LandingPage() {
           rel="stylesheet"
         />
       </Head>
-      <NavBar/>
-      <Container maxW={'3xl'}>
+      <NavBar />
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
-          textAlign={'center'}
+          textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 20 }}>
+          py={{ base: 20, md: 20 }}
+        >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
+          >
             Get some SOL from <br />
-            <Text as={'span'} color={'green.400'}>
+            <Text as={"span"} color={"blue.400"}>
               your audience
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-            Incentivise your projects or products by pitching your work to the most engaging audience. List your items and receive the donations right into your wallet. Proudly made on Solana Network!
+          <Text color={"gray.900"} fontSize="xl">
+            Incentivize your projects or products by pitching your work to the
+            most engaging audience. List your items and receive the donations
+            right into your wallet. <br />
+            Proudly made on Solana Network!
           </Text>
           <Stack
-            direction={'column'}
+            direction={"column"}
             spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
             <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
+              colorScheme={"green"}
+              bg={"blue.400"}
+              size="lg"
+              rounded={"full"}
               px={6}
               _hover={{
-                bg: 'green.500',
+                bg: "green.500",
               }}
-              onClick={() => { router.push('/explore') }}>
+              onClick={() => {
+                router.push("/explore");
+              }}
+            >
               Explore
             </Button>
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
+                color={useColorModeValue("gray.800", "gray.300")}
                 w={71}
-                position={'absolute'}
+                position={"absolute"}
                 right={-71}
-                top={'10px'}
+                top={"10px"}
               />
               <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
+                fontSize={"lg"}
+                fontFamily={"Caveat"}
+                position={"absolute"}
+                right={"-125px"}
+                top={"-15px"}
+                transform={"rotate(10deg)"}
+              >
                 Donate us!
               </Text>
             </Box>
           </Stack>
         </Stack>
       </Container>
-    <Center>
-    <Flex p={4} width='70%' justifyContent={'center'} mb={20} >
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        <Feature
-          icon={<Icon as={FcAssistant} w={10} h={10} />}
-          title={'Open Source'}
-          text={
-            'We welcome all the contributors who wanna pitch their work and incentivise the project with bigger audience.'
-          }
-        />
-        <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
-          title={'Unlimited Donations'}
-          text={
-            'No constraints in donation'
-          }
-        />
-        <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title={'Instant Delivery'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-      </SimpleGrid>
-    </Flex>
-    </Center>
-    <Footer/>
+      <Center>
+        <Flex p={4} width="70%" justifyContent={"center"} mb={20}>
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={20}>
+            <Feature
+              icon={<Icon as={FcAssistant} w={10} h={10} />}
+              title={"Open Source"}
+              text={
+                "SOL Grant welcomes all the contributors who wanna pitch their work and incentivize the project with larger audience."
+              }
+            />
+            <Feature
+              icon={<Icon as={FcDonate} w={10} h={10} />}
+              title={"Unlimited Donations"}
+              text={
+                "Hassleless transactions on Solana Blockchain, just send your wishes instantly."
+              }
+            />
+            <Feature
+              icon={<Icon as={FcInTransit} w={10} h={10} />}
+              title={"Secure"}
+              text={
+                "Enjoy the most seamless transaction experience. Donate your little amount securely and be part of social contributions."
+              }
+            />
+          </SimpleGrid>
+        </Flex>
+      </Center>
+      <Footer />
     </>
   );
 }
 
 const Arrow = createIcon({
-  displayName: 'Arrow',
-  viewBox: '0 0 72 24',
+  displayName: "Arrow",
+  viewBox: "0 0 72 24",
   path: (
     <path
       fillRule="evenodd"
