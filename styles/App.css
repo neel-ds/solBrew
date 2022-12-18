@@ -14,6 +14,83 @@
   position: relative;
 }
 
+.solanaLogo {
+  width: 6%;
+  height: 70%;
+  margin-top: 0.3rem;
+}
+
+.cross {
+  width: 2%;
+  height: 70%;
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+.mlhLogo {
+  width: 12%;
+  height: 100%;
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+}
+
+.btn {
+  background: linear-gradient(
+    135deg,
+    rgba(63, 92, 237, 1) 0%,
+    rgba(161, 59, 247, 0.9780505952380952) 51%,
+    rgb(2, 243, 187) 100%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient-animation 2s ease infinite;
+  -moz-animation: gradient-animation 2s ease infinite;
+  animation: gradient-animation 2s ease infinite;
+  border: none;
+  border-radius: 3rem;
+  padding: 0.6rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.8rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-adapter-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 48px;
+  line-height: 1.7rem;
+  padding: 0 24px;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: none !important;
+}
+
+.wallet-adapter-button.wallet-adapter-button-trigger:hover {
+  background-color: transparent !important;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background-color: none !important ;
+}
+
+.wallet-adapter-button[disabled] {
+  background: none !important;
+  color: none !important;
+  cursor: not-allowed;
+}
+
 .header {
   margin: 0;
   font-size: 3.2em;
@@ -24,6 +101,7 @@
 
 .sub-text {
   font-size: 1.4em;
+  font-weight: 600;
 }
 
 .header-container {

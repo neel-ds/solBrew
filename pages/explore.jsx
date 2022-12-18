@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Center } from "@chakra-ui/react";
+import { Center, Text } from "@chakra-ui/react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Product from "../components/Product";
 import { NavBar } from "../components/NavBar";
@@ -28,7 +28,7 @@ const App = () => {
         <picture>
           <img
             className="donate"
-            src="https://ekhumfoundation.com/wp-content/uploads/2022/02/Donate-1024x818.jpeg"
+            src="https://bafkreidl2ilyfc3iijz25i24mvdybrnm56aylop7akwfgzblmxnygwqdqy.ipfs.nftstorage.link/"
             alt="kindness"
           />
         </picture>
@@ -56,7 +56,14 @@ const App = () => {
         <br />
         <header className="header-container">
           <div className="title-container">
-            <h2 className="header">SOL Grant</h2>
+            <Text
+              className="header"
+              bgGradient="linear(to-l, #3f5ced, #a13bf7f9, #02f3bb)"
+              bgClip="text"
+              fontWeight="extrabold"
+            >
+              SOL Grant
+            </Text>
           </div>
         </header>
         <div className="sub-text detail">

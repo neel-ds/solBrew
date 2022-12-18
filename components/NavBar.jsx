@@ -24,21 +24,30 @@ export const NavBar = () => {
               }}
             >
               <img
+                className="solanaLogo"
                 src={
-                  "https://sol-minter-pi.vercel.app/_next/image?url=%2FsolanaLogoMark.png&w=64&q=75"
+                  "https://bafkreiebs5cfjv56qgtnh35mkmnis4mxgkvbucohx3ybpz3ijinw3vvetq.ipfs.nftstorage.link/"
                 }
-                alt="Solana logo"
-                width="70%"
-                height={"70%"}
+                alt="Solana Logo"
+              />
+              <img
+                className="cross"
+                src={
+                  "https://bafkreieamwfc6r7ufi7jutxipzh7qr5tcockaxvtky6rgcuhmeznce5r4a.ipfs.nftstorage.link/"
+                }
+                alt="cross"
+              />
+              <img
+                className="mlhLogo"
+                src={
+                  "https://bafkreiak7ag57r3ulyjovhupxmw4mqowwkfurhn7vmvxawz3nv3vdexgpe.ipfs.nftstorage.link/"
+                }
+                alt="MLH Logo"
               />
             </Flex>
-            <Text fontWeight={"bold"} fontSize="3xl">
-              {" "}
-              SOL Grant{" "}
-            </Text>
           </HStack>
-          <HStack display="flex" alignItems="center" spacing={1}>
-            <WalletMultiButtonDynamic style={{ background: "#260367" }} />
+          <HStack className="btn" display="flex" alignItems="center">
+            <WalletMultiButtonDynamic />
           </HStack>
         </Flex>
       </chakra.header>

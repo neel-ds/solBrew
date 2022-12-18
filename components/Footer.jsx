@@ -7,7 +7,7 @@ export const Footer = () => {
       color="black"
       textAlign="center"
       fontWeight={"bold"}
-      mb="5"
+      mb="0.2"
       mt="5"
     >
       Made with ❤️ by Neel Patel

@@ -84,19 +84,19 @@ export default function Product({ product }) {
                 fontSize={"xl"}
                 rounded={"lg"}
                 width={"8rem"}
-                bg={"blue.500"}
+                bg={"#02f3bb"}
                 size={"3xl"}
                 p={2}
-                color={"white"}
+                color={"black"}
                 type="submit"
                 boxShadow={
                   "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
                 }
                 _hover={{
-                  bg: "green.500",
+                  bg: "#02f3bb",
                 }}
                 _focus={{
-                  bg: "green.400",
+                  bg: "#02f3bb",
                 }}
               >
                 Donate

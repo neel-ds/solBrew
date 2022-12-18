@@ -13,7 +13,7 @@ import {
   Flex,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc";
+import { LinkIcon, LockIcon, StarIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
@@ -22,18 +22,20 @@ const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
       <Flex
-        w={16}
-        h={16}
+        w={14}
+        h={14}
         align={"center"}
         justify={"center"}
         color={"white"}
         rounded={"full"}
-        bg={"gray.200"}
+        bg={"#02f3bb"}
         mb={1}
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{title}</Text>
+      <Text fontWeight={600} fontSize={"2xl"} color={"#3f5ced"}>
+        {title}
+      </Text>
       <Text color={"gray.800"}>{text}</Text>
     </Stack>
   );
@@ -62,11 +64,18 @@ export default function LandingPage() {
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
+            color={""}
           >
-            Get some SOL from <br />
-            <Text as={"span"} color={"blue.400"}>
-              your audience
-            </Text>
+            Get some{" "}
+            <Text
+              as={"span"}
+              bgGradient="linear(to-r, #a13bf7f9, #02f3bb)"
+              bgClip="text"
+              fontWeight="extrabold"
+            >
+              SOL
+            </Text>{" "}
+            from <br /> your audience
           </Heading>
           <Text color={"gray.900"} fontSize="xl">
             Incentivize your projects or products by pitching your work to the
@@ -83,12 +92,13 @@ export default function LandingPage() {
           >
             <Button
               colorScheme={"green"}
-              bg={"blue.400"}
+              bg={"#9f4be3f9"}
               size="lg"
               rounded={"full"}
               px={6}
               _hover={{
-                bg: "green.500",
+                bg: "rgb(2, 243, 187)",
+                color: "black",
               }}
               onClick={() => {
                 router.push("/explore");
@@ -123,21 +133,21 @@ export default function LandingPage() {
         <Flex p={4} width="70%" justifyContent={"center"} mb={20}>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={20}>
             <Feature
-              icon={<Icon as={FcAssistant} w={10} h={10} />}
+              icon={<Icon as={LinkIcon} w={6} h={6} color={"black"} />}
               title={"Open Source"}
               text={
                 "SOL Grant welcomes all the contributors who wanna pitch their work and incentivize the project with larger audience."
               }
             />
             <Feature
-              icon={<Icon as={FcDonate} w={10} h={10} />}
+              icon={<Icon as={StarIcon} w={6} h={6} color={"black"} />}
               title={"Unlimited Donations"}
               text={
                 "Hassleless transactions on Solana Blockchain, just send your wishes instantly."
               }
             />
             <Feature
-              icon={<Icon as={FcInTransit} w={10} h={10} />}
+              icon={<Icon as={LockIcon} w={6} h={6} color={"black"} />}
               title={"Secure"}
               text={
                 "Enjoy the most seamless transaction experience. Donate your little amount securely and be part of social contributions."
