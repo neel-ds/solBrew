@@ -27,12 +27,27 @@ const App = ({ Component, pageProps }) => {
     [network]
   );
 
+  // add background image with responsive
+  const bgImage = {
+    backgroundImage:
+      "url(https://bafybeiepzg5apnjl46h3lse4bqqab72wjwsqb3vwnjk7u4cmp4o4g72po4.ipfs.nftstorage.link)",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "auto",
+    width: "auto",
+    position: "absolute",
+    zIndex: "-1",
+  };
+
   return (
     <ChakraProvider>
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider>
-            <Component {...pageProps} />
+            <div style={bgImage}>
+              <Component {...pageProps} />
+            </div>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>

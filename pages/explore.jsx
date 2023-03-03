@@ -4,6 +4,19 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import Product from "../components/Product";
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
+import Head from "next/head";
+
+const bgImage = {
+  backgroundImage:
+    "url(https://bafybeiepzg5apnjl46h3lse4bqqab72wjwsqb3vwnjk7u4cmp4o4g72po4.ipfs.nftstorage.link)",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  height: "100vh",
+  width: "auto",
+  position: "fixed",
+  zIndex: "-1",
+};
 
 const App = () => {
   // It fetches publicKey of any connected users' wallet or supported wallet.
@@ -28,7 +41,7 @@ const App = () => {
         <picture>
           <img
             className="donate"
-            src="https://bafkreidl2ilyfc3iijz25i24mvdybrnm56aylop7akwfgzblmxnygwqdqy.ipfs.nftstorage.link/"
+            src="https://bafkreigjyt4bl5nd7p46wv5lsu5yitfxdt4cssptmwwxk5prmpotcycpqi.ipfs.nftstorage.link"
             alt="kindness"
           />
         </picture>
@@ -49,7 +62,16 @@ const App = () => {
   );
 
   return (
-    <div className="App">
+    <div className="App" style={bgImage}>
+      <Head>
+        <title>Explore</title>
+        <meta name="description" content="solBrew" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <NavBar />
       <div className="container">
         <br />
@@ -58,17 +80,17 @@ const App = () => {
           <div className="title-container">
             <Text
               className="header"
-              bgGradient="linear(to-l, #3f5ced, #a13bf7f9, #02f3bb)"
+              bgGradient="linear(to-l, #9945FF, #a13bf7, #02f3bb)"
               bgClip="text"
               fontWeight="extrabold"
             >
-              SOL Grant
+              SOL Brew
             </Text>
           </div>
         </header>
         <div className="sub-text detail">
-          It is a platform for awesome contributors to support work over the
-          Solana network.
+          Brew your coffee with us! Your awesome contributions are highly
+          appreciated and incentivized💰
         </div>
         <main>
           {/* Ensures wallet connection */}

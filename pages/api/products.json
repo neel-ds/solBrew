@@ -1,14 +1,16 @@
 [
   {
     "id": 1,
-    "name": "Asset Vault",
-    "image_url": "https://www.youtube.com/embed/BE9ItnldHcA",
-    "description": "Asset Vault provides utilities to manage funds or assets in DAOs. The company needs to create a vault of investors' addresses mapped with shares (in percent %) according to their investment."
+    "name": "LogChain",
+    "image_url": "https://www.youtube.com/embed/cRGl1KvPqic",
+    "description": "LogChain is a decentralized provenance application that tracks the ownership and movement of a product or asset through its life cycle. It helps to authenticate the product and prevent any sale of counterfeit goods.",
+    "link": "https://github.com/vrajdesai78/LogChain"
   },
   {
     "id": 2,
-    "name": "DataCV",
-    "image_url": "https://www.youtube.com/embed/5HuChFNtT3Y",
-    "description": "DataCV is a decentralised application that stores data and is based on interplanetary file system(IPFS). It is storage application which comes with top cream privileges. It supports any type of file format."
+    "name": "fitQuest",
+    "image_url": "https://www.youtube.com/embed/ELVcUgYuH_Y",
+    "description": "FitQuest solves the problem of inconsistency in fitness and wellness habits by providing users with a platform that encourages and rewards them for forming good fitness habits and staying committed to their goals.",
+    "link": "https://github.com/neel-ds/fitQuest"
   }
 ]

@@ -28,12 +28,12 @@ const Feature = ({ title, text, icon }) => {
         justify={"center"}
         color={"white"}
         rounded={"full"}
-        bg={"#02f3bb"}
+        bg={"#9945FF"}
         mb={1}
       >
         {icon}
       </Flex>
-      <Text fontWeight={600} fontSize={"2xl"} color={"#3f5ced"}>
+      <Text fontWeight={600} fontSize={"2xl"} color={"blueviolet"}>
         {title}
       </Text>
       <Text color={"gray.800"}>{text}</Text>
@@ -47,6 +47,9 @@ export default function LandingPage() {
   return (
     <>
       <Head>
+        <title>SolBrew</title>
+        <meta name="description" content="solBrew" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
           rel="stylesheet"
@@ -69,7 +72,7 @@ export default function LandingPage() {
             Get some{" "}
             <Text
               as={"span"}
-              bgGradient="linear(to-r, #a13bf7f9, #02f3bb)"
+              bgGradient="linear(to-r, #9945FF 42%, #14F195)"
               bgClip="text"
               fontWeight="extrabold"
             >
@@ -79,7 +82,7 @@ export default function LandingPage() {
           </Heading>
           <Text color={"gray.900"} fontSize="xl">
             Incentivize your projects or products by pitching your work to the
-            most engaging audience. List your items and receive the donations
+            most amazing audience. List your items and receive the micro-grant
             right into your wallet. <br />
             Proudly made on Solana Network!
           </Text>
@@ -92,12 +95,12 @@ export default function LandingPage() {
           >
             <Button
               colorScheme={"green"}
-              bg={"#9f4be3f9"}
+              bg={"#9945FF"}
               size="lg"
               rounded={"full"}
               px={6}
               _hover={{
-                bg: "rgb(2, 243, 187)",
+                bg: "#14F195",
                 color: "black",
               }}
               onClick={() => {
@@ -109,7 +112,7 @@ export default function LandingPage() {
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue("gray.800", "gray.300")}
+                color={useColorModeValue("gray.600", "gray.300")}
                 w={71}
                 position={"absolute"}
                 right={-71}
@@ -133,24 +136,24 @@ export default function LandingPage() {
         <Flex p={4} width="70%" justifyContent={"center"} mb={20}>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={20}>
             <Feature
-              icon={<Icon as={LinkIcon} w={6} h={6} color={"black"} />}
+              icon={<Icon as={LinkIcon} w={6} h={6} color={"white"} />}
               title={"Open Source"}
               text={
-                "SOL Grant welcomes all the contributors who wanna pitch their work and incentivize the project with larger audience."
+                "We supports FOSS! welcomes contributors to pitch their work and receive micro-grants at ZERO fees."
               }
             />
             <Feature
-              icon={<Icon as={StarIcon} w={6} h={6} color={"black"} />}
+              icon={<Icon as={StarIcon} w={6} h={6} color={"white"} />}
               title={"Unlimited Donations"}
               text={
-                "Hassleless transactions on Solana Blockchain, just send your wishes instantly."
+                "Seamless experience for giveaways or campaigns to extend the reach towards larger audience on-chain"
               }
             />
             <Feature
-              icon={<Icon as={LockIcon} w={6} h={6} color={"black"} />}
+              icon={<Icon as={LockIcon} w={6} h={6} color={"white"} />}
               title={"Secure"}
               text={
-                "Enjoy the most seamless transaction experience. Donate your little amount securely and be part of social contributions."
+                "The Proof of History consensus is highly secured. Brew some SOL with us and be part of innovative change."
               }
             />
           </SimpleGrid>

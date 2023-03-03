@@ -10,7 +10,7 @@ export const Footer = () => {
       mb="0.2"
       mt="5"
     >
-      Made with ❤️ by Neel Patel
+      Made with ❤️ by Neel
     </Text>
   );
 };

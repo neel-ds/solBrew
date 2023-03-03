@@ -7,14 +7,17 @@ import {
   NumberInputField,
   Button,
   NumberInputStepper,
+  Icon,
 } from "@chakra-ui/react";
+import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
 import * as Web3 from "@solana/web3.js";
 import { useState } from "react";
 import styles from "../styles/Product.module.css";
+import Link from "next/link";
 
 export default function Product({ product }) {
-  const { name, description, image_url } = product;
+  const { name, description, image_url, link } = product;
   const [txSig, setTxSig] = useState("");
   const { connection } = useConnection();
   const { publicKey, sendTransaction } = useWallet();
@@ -61,9 +64,19 @@ export default function Product({ product }) {
         <div className={styles.product_action}>
           <form onSubmit={donate}>
             <Stack mt={8} direction={"row"} spacing={2}>
+              // add href to this icon
+              <Link href={link} target="_blank">
+                <Icon
+                  as={BsFillArrowUpRightCircleFill}
+                  boxSize={8}
+                  color={"white"}
+                  marginTop={1}
+                  marginRight={1}
+                />
+              </Link>
               <NumberInput width={"100%"}>
                 <NumberInputField
-                  placeholder="Enter SOL"
+                  placeholder="Brew SOL"
                   flex={2}
                   bg={"gray.100"}
                   fontSize={"sm"}
@@ -84,7 +97,7 @@ export default function Product({ product }) {
                 fontSize={"xl"}
                 rounded={"lg"}
                 width={"8rem"}
-                bg={"#02f3bb"}
+                bg={"#14F195"}
                 size={"3xl"}
                 p={2}
                 color={"black"}

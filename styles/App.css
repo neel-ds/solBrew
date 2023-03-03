@@ -14,24 +14,11 @@
   position: relative;
 }
 
-.solanaLogo {
-  width: 6%;
+.solBrew {
+  width: 15%;
   height: 70%;
-  margin-top: 0.3rem;
-}
-
-.cross {
-  width: 2%;
-  height: 70%;
-  margin-top: 1.4rem;
-  margin-left: 1.5rem;
-}
-
-.mlhLogo {
-  width: 12%;
-  height: 100%;
-  margin-top: 0.3rem;
-  margin-left: 1.5rem;
+  margin-left: 13rem;
+  margin-top: -3rem;
 }
 
 .btn {
@@ -51,7 +38,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 0.5rem 0.8rem 1rem;
+  margin: 0rem 5rem 2rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -66,11 +53,11 @@
   align-items: center;
   font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  height: 48px;
+  height: 2.5rem;
   line-height: 1.7rem;
-  padding: 0 24px;
+  padding: 0 1rem;
 }
 
 .wallet-adapter-button-trigger {

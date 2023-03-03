@@ -24,25 +24,11 @@ export const NavBar = () => {
               }}
             >
               <img
-                className="solanaLogo"
+                className="solBrew"
                 src={
-                  "https://bafkreiebs5cfjv56qgtnh35mkmnis4mxgkvbucohx3ybpz3ijinw3vvetq.ipfs.nftstorage.link/"
+                  "https://bafybeiajsvpelpkmydtvejknf6tplr6i5ovef7vlwbzkmnku7n7xep5shi.ipfs.nftstorage.link"
                 }
-                alt="Solana Logo"
-              />
-              <img
-                className="cross"
-                src={
-                  "https://bafkreieamwfc6r7ufi7jutxipzh7qr5tcockaxvtky6rgcuhmeznce5r4a.ipfs.nftstorage.link/"
-                }
-                alt="cross"
-              />
-              <img
-                className="mlhLogo"
-                src={
-                  "https://bafkreiak7ag57r3ulyjovhupxmw4mqowwkfurhn7vmvxawz3nv3vdexgpe.ipfs.nftstorage.link/"
-                }
-                alt="MLH Logo"
+                alt="Solana Brew"
               />
             </Flex>
           </HStack>
